@@ -1,0 +1,53 @@
+{
+  "name": "floema",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "backend:build": "nodemon app.js",
+    "backend:development": "nodemon app.js",
+    "frontend:build": "webpack --progress --config webpack.config.build.js",
+    "frontend:development": "webpack serve --progress --config webpack.config.development.js ",
+    "start": "npm run development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ruhama Sahle",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-loader": "^8.2.5",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.1",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "eslint-webpack-plugin": "^3.1.1",
+    "glslify-loader": "^2.0.0",
+    "image-minimizer-webpack-plugin": "^3.2.3",
+    "imagemin": "^8.0.1",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^10.0.1",
+    "mini-css-extract-plugin": "^2.6.0",
+    "postcss-loader": "^7.0.0",
+    "sass": "^1.52.2",
+    "sass-loader": "^13.0.0",
+    "terser-webpack-plugin": "^5.3.3",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.1",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "@prismicio/client": "^6.5.1",
+    "@prismicio/helpers": "^2.3.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "graceful-fs": "^4.2.4",
+    "node-fetch": "^2.6.7",
+    "nodemon": "^2.0.16",
+    "pug": "^3.0.2"
+  }
+}
